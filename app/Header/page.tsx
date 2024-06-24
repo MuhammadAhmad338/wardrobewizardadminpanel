@@ -18,7 +18,7 @@ const Header = () => {
           </Link>
         </div>
         <nav className="hidden md:flex space-x-6">
-          <Link href="/home">
+          <Link href="/">
             <p className="hover:text-gray-400">Home</p>
           </Link>
           <Link href="/products">
