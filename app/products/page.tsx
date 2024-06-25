@@ -1,6 +1,6 @@
-"use client"
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+"use client";
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../Store/store';
 import { fetchProducts } from '../Slice/productsSlice';
 
@@ -16,11 +16,9 @@ const Products = () => {
       dispatch(fetchProducts());
     }
   }, [status, dispatch]);
-
   if (status === 'loading') {
     return <div>Loading...</div>;
   }
-
   if (status === 'failed') {
     return <div>{error}</div>;
   }
@@ -53,4 +51,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Products;
